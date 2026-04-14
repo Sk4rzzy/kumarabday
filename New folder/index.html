@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srećan 16ti rođendan!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Srecan rodjendan Kumaricee!🎂🎂</h1>
+    </header>
+
+    <div class="legend">
+      <div class="legend-item">
+        <img src="assets/lollipop.png" alt="Lizalica" />
+        <div>
+          <strong>Skupi ih 16</strong>
+        </div>
+      </div>
+      <div class="legend-item">
+        <img src="assets/redbull.png" alt="Redbull" />
+        <div>
+          <strong>Ubrza te</strong>
+        </div>
+      </div>
+      <div class="legend-item">
+        <img src="assets/milica.png" alt="Milica" />
+        <div>
+          <strong>Bjezi od ove dosade zenske</strong>
+        </div>
+      </div>
+    </div>
+
+    <section class="game-panel">
+      <div class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Životi: <span id="lives">3</span></div>
+        <div>Lizalice: <span id="lollipops">0</span>/16</div>
+      </div>
+
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+      <div class="controls">
+        <button id="upButton">▲ Gore</button>
+        <button id="downButton">▼ Dolje</button>
+        <button id="pause-button">Pauza</button>
+        <button id="mute-button">Mute 🔉</button>
+        <button id="start-button">Start</button>
+      </div>
+    </section>
+
+    <div id="winOverlay" class="letter hidden">
+      <div class="letter-content">
+        <h2>TO KUMARAAAA</h2>
+        <p>Sada si najhappy osoba :></p>
+        <p><a href="cestitka.html" class="win-link">Klikni ovdje da vidiš čestitku</a></p>
+        <button class="restart-button">reset</button>
+      </div>
+    </div>
+
+    <div id="loseOverlay" class="letter hidden">
+      <div class="letter-content">
+        <h2>A jebem mu kume</h2>
+        <p>Sprdas li se da te milica navatala</p>
+        <p>nema veze aj probaj opet pls</p>
+        <button class="restart-button">reset</button>
+      </div>
+    </div>
+
+    <audio id="bg-music" src="assets/music.mp3" preload="auto"></audio>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
